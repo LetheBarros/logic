@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-12 03:43:15 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTI7IjAzOjMwOjU3ICI7Mjc1Nw=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTI7IjAzOjQzOjE1ICI7MzsyODY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="divisor, dividendo, result" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o valor do divisor&quot;" newline="True"/>
+            <input variable="divisor"/>
+            <if expression="divisor == 0">
+                <then>
+                    <output expression="&quot;Por favor utilize um divisor diferente de zero&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Digite o valor do dividendo&quot;" newline="True"/>
+                    <input variable="dividendo"/>
+                    <assign variable="result" expression="dividendo / divisor"/>
+                    <output expression="&quot;o resultado &#233; &quot; &amp; result" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

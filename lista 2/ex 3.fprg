@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-01 10:47:06 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMDE7IjEwOjE5OjQzICI7Mjc1NQ=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMDE7IjEwOjQ3OjA2ICI7MjsyODY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3. Maior entre tr&#234;s n&#250;meros: Ler tr&#234;s n&#250;meros diferentes e mostrar na tela uma mensagem indicando qual &#233; o maior."/>
+            <declare name="n1, n2, n3" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o 1&#186; n&#250;mero&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Digite o 2&#186; n&#250;mero&quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Digite o 3&#186; n&#250;mero&quot;" newline="True"/>
+            <input variable="n3"/>
+            <if expression="n1 &gt; n2 and n1 &gt; n3">
+                <then>
+                    <output expression="n1 &amp; &quot; &#233; o maior&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="n2 &gt; n3">
+                        <then>
+                            <output expression="n2 &amp; &quot; &#233; o maior&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="n3 &amp; &quot; &#233; o maior&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

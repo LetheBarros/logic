@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-12 07:55:51 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTI7IjA3OjM2OjM3ICI7Mjc2NQ=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTI7IjA3OjU1OjUxICI7MTsyODcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ano, result" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o ano&quot;" newline="True"/>
+            <input variable="ano"/>
+            <if expression="ano % 100 == 0 &amp;&amp; ano % 400 == 0">
+                <then>
+                    <output expression="&quot;Ano bissexto&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="ano % 4 != 0">
+                        <then>
+                            <output expression="&quot;N&#227;o &#233; ano bissexto&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Ano bissexto&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

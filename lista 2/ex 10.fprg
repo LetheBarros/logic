@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-14 10:24:05 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTQ7IjEwOjA5OjIxICI7Mjc1NA=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTQ7IjEwOjI0OjA1ICI7MTsyODYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salario, pago" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual o valor do seu sal&#225;rio?&quot;" newline="True"/>
+            <input variable="salario"/>
+            <if expression="salario &lt; 100">
+                <then>
+                    <output expression="&quot;Isento de pagamento de imposto de renda&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="salario &lt; 500">
+                        <then>
+                            <assign variable="pago" expression="salario * 0.10"/>
+                        </then>
+                        <else>
+                            <if expression="salario &lt; 2000">
+                                <then>
+                                    <assign variable="pago" expression="salario * 0.18"/>
+                                </then>
+                                <else>
+                                    <assign variable="pago" expression="salario * 0.25"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <output expression="&quot;O valor pago ao imposto de renda &#233; &quot; &amp; pago &amp; &quot; reais&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

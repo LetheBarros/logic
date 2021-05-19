@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-01 10:13:41 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMDE7IjA5OjM2OjE2ICI7Mjc2Mg=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMDE7IjEwOjEzOjQxICI7MTsyODU1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Maior entre dois n&#250;meros: Ler dois n&#250;meros inteiros, quaisquer e mostrar na tela uma mensagem indicando qual &#233; o maior, ou se s&#227;o iguais."/>
+            <declare name="n1, n2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Digite o segundo n&#250;mero&quot;" newline="True"/>
+            <input variable="n2"/>
+            <if expression="n1 &gt; n2">
+                <then>
+                    <output expression="n1 &amp; &quot; &#233; o maior que &quot; &amp; n2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="n1 == n2">
+                        <then>
+                            <output expression="&quot;os n&#250;meros s&#227;o iguais&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="n2 &amp; &quot; &#233; o maior que &quot; &amp; n1" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

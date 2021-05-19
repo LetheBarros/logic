@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-01 08:59:27 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMDE7IjA4OjUwOjM1ICI7Mjc1OA=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMDE7IjA4OjU5OjI3ICI7MTsyODc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="1. Construa um aplicativo que verifique e mostre ao usu&#225;rio  qual combust&#237;vel compensa utilizar em um autom&#243;vel &#8220;flex&#8221;. Sabe-se que a rela&#231;&#227;o entre o pre&#231;o do  &#225;lcool e o pre&#231;o da gasolina &#233; 0,7."/>
+            <declare name="gasolina, alcool, relacao" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual o pre&#231;o da gasolina?&quot;" newline="True"/>
+            <input variable="gasolina"/>
+            <output expression="&quot;Qual o pre&#231;o do &#225;lcool?&quot;" newline="True"/>
+            <input variable="alcool"/>
+            <assign variable="relacao" expression="alcool/gasolina"/>
+            <if expression="relacao &gt;= 0.7">
+                <then>
+                    <output expression="&quot;Usar gasolina&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Usar &#225;lcool&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

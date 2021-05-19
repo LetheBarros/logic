@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-15 09:07:22 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTM7IjEwOjM0OjU0ICI7Mjc1Nw=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTU7IjA5OjA3OjIyICI7NDsyODcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="compra, troco, pago, cem, dez, um, quant" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor da compra&quot;" newline="True"/>
+            <input variable="compra"/>
+            <output expression="&quot;Quanto dinheiro voc&#234; entregar&#225;?&quot;" newline="True"/>
+            <input variable="pago"/>
+            <comment text="vai ter troco?"/>
+            <if expression="pago &gt; compra">
+                <then>
+                    <assign variable="troco" expression="pago - compra"/>
+                    <assign variable="cem" expression="troco/100"/>
+                    <assign variable="dez" expression="(troco % 100) /10"/>
+                    <assign variable="um" expression="((troco % 100) %10)"/>
+                    <assign variable="quant" expression="cem + dez + um"/>
+                    <output expression="&quot;Sua compra foi de &quot; &amp; compra &amp; &quot; reais.&quot; &amp;&#13;&#10;&quot; Seu troco ser&#225; de &quot; &amp; troco &amp; &quot; reais.&quot; &amp;&#13;&#10;&quot; Voc&#234; receber&#225; &quot; &amp; cem &amp; &quot; nota(s) de cem, &quot; &amp; dez &amp;&#13;&#10;&quot; nota(s) de dez e &quot; &amp; um &amp; &quot; nota(s) de um, totalizando &quot; &amp; quant &amp; &quot; notas de troco.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Sua compra n&#227;o ter&#225; troco&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-12 07:36:34 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTI7IjA0OjA2OjU4ICI7Mjc2Mg=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTI7IjA3OjM2OjM0ICI7MjsyODcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, per, area, sp" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor de a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Digite o valor de b&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Digite o valor de c&quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="(A&lt;B+C) &amp;&amp; (C&lt;A+B) &amp;&amp; (B&lt;A+C)">
+                <then>
+                    <assign variable="sp" expression="(a + b + c)/2"/>
+                    <assign variable="per" expression="a + b + c"/>
+                    <assign variable="area" expression="sqrt(sp*(sp-a)*(sp-b)*(sp-c))"/>
+                    <if expression="a == b &amp;&amp; b == c">
+                        <then>
+                            <output expression="&quot;Este &#233; um tri&#226;ngulo equil&#225;tero&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="a == b || b == c || a == c">
+                                <then>
+                                    <output expression="&quot;Este &#233; um tri&#226;ngulo is&#243;sceles&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Este &#233; um tri&#226;ngulo escaleno&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <output expression="&quot;Seu per&#237;metro &#233; &quot; &amp; per &amp; &quot; e sua &#225;rea &#233; &quot; &amp; area" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;N&#227;o &#233; um tri&#226;ngulo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

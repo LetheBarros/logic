@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-15 09:06:02 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTQ7IjEwOjI1OjQ4ICI7Mjc2MQ=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTU7IjA5OjA2OjAyICI7NjsyODcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="xa, ya, ladoa, xb, yb, ladob, xc, yc, ladoc, per, area, sp" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ponto A: eixo X&quot;" newline="True"/>
+            <input variable="xa"/>
+            <output expression="&quot;Ponto A: eixo Y&quot;" newline="True"/>
+            <input variable="ya"/>
+            <output expression="&quot;Ponto B: eixo X&quot;" newline="True"/>
+            <input variable="xb"/>
+            <output expression="&quot;Ponto B: eixo Y&quot;" newline="True"/>
+            <input variable="yb"/>
+            <output expression="&quot;Ponto C: eixo X&quot;" newline="True"/>
+            <input variable="xc"/>
+            <output expression="&quot;Ponto C: eixo Y&quot;" newline="True"/>
+            <input variable="yc"/>
+            <assign variable="ladoa" expression="sqrt((xb-xa)^2+(yb-ya)^2)"/>
+            <assign variable="ladob" expression="sqrt((xc-xb)^2+(yc-yb)^2)"/>
+            <assign variable="ladoc" expression="sqrt((xa-xc)^2+(ya-yc)^2)"/>
+            <if expression="(A&lt;B+C) &amp;&amp; (C&lt;A+B) &amp;&amp; (B&lt;A+C)">
+                <then>
+                    <assign variable="per" expression="ladoa + ladob + ladoc"/>
+                    <assign variable="sp" expression="per/2"/>
+                    <assign variable="area" expression="sqrt(sp*(sp-ladoa)*(sp-ladob)*(sp-ladoc))"/>
+                    <output expression="&quot;Tamanho lado A: &quot; &amp; ladoa &amp; &quot;; Tamanho lado B: &quot; &amp; ladob &amp; &quot;; Tamanho lado C: &quot; &amp; ladoc &amp;&quot;.&quot;" newline="True"/>
+                    <output expression="&quot;&#193;rea do tri&#226;ngulo: &quot; &amp; area &amp; &quot;. Per&#237;metro do tri&#226;ngulo: &quot; &amp; per &amp; &quot;.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;N&#227;o &#233; um tri&#226;ngulo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
