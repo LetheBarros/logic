@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-05-03 07:33:44 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDUtMDM7IjA3OjI3OjIyICI7Mjc2MQ=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDUtMDM7IjA3OjMzOjQ0ICI7MzsyODcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, p" type="Integer" array="False" size=""/>
+            <declare name="C, A" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o valor de n&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;Digite o valor de p&quot;" newline="True"/>
+            <input variable="p"/>
+            <assign variable="C" expression="fatorial(n)/(fatorial(p)* fatorial(n-p))"/>
+            <assign variable="A" expression="fatorial(n)/fatorial(n-p)"/>
+            <output expression="&quot;Combina&#231;&#227;o n,p = &quot; &amp; C" newline="True"/>
+            <output expression="&quot;Arranjo n,p = &quot; &amp; A" newline="True"/>
+        </body>
+    </function>
+    <function name="fatorial" type="Real" variable="f">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="f" type="Real" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="f" expression="1"/>
+            <if expression="n &lt;&gt; 0">
+                <then>
+                    <for variable="c" start="1" end="n" direction="inc" step="1">
+                        <assign variable="f" expression="f*c"/>
+                    </for>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

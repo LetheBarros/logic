@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-05-03 07:44:22 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTI7IjA3OjM2OjM3ICI7Mjc2NQ=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDUtMDM7IjA3OjQ0OjIyICI7MzsyODcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ano, result" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o ano&quot;" newline="True"/>
+            <input variable="ano"/>
+            <output expression="verif(ano)" newline="True"/>
+        </body>
+    </function>
+    <function name="verif" type="String" variable="resp">
+        <parameters>
+            <parameter name="ano" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="resp" type="String" array="False" size=""/>
+            <if expression="ano % 100 == 0 &amp;&amp; ano % 400 == 0">
+                <then>
+                    <assign variable="resp" expression="&quot;Ano bissexto&quot;"/>
+                </then>
+                <else>
+                    <if expression="ano % 4 != 0">
+                        <then>
+                            <assign variable="resp" expression="&quot;N&#227;o &#233; ano bissexto&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="resp" expression="&quot;Ano bissexto&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

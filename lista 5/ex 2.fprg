@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-05-03 07:04:00 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDUtMDM7IjA2OjQwOjE3ICI7Mjc1OQ=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDUtMDM7IjA3OjA0OjAwICI7MzsyODYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o n&#250;mero desejado&quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="par(numero)">
+                <then>
+                    <output expression="&quot;O numero &quot; &amp; numero &amp; &quot;&#233; par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O numero &quot; &amp; numero &amp; &quot;&#233; &#237;mpar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="par" type="Boolean" variable="v">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+            <parameter name="v" type="Boolean" array="False"/>
+        </parameters>
+        <body>
+            <declare name="v" type="Boolean" array="False" size=""/>
+            <if expression="n mod 2 = 0">
+                <then>
+                    <assign variable="v" expression="true"/>
+                </then>
+                <else>
+                    <assign variable="v" expression="false"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

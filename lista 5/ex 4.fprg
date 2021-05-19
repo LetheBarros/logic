@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-05-03 07:25:53 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDUtMDM7IjA3OjIyOjExICI7Mjc1NA=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDUtMDM7IjA3OjI1OjUzICI7MTsyODcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="capital, valorVF" type="Real" array="False" size=""/>
+            <declare name="tempo, taxa" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o Capital&quot;" newline="True"/>
+            <input variable="capital"/>
+            <output expression="&quot;Digite o tempo&quot;" newline="True"/>
+            <input variable="tempo"/>
+            <output expression="&quot;Digite a taxa&quot;" newline="True"/>
+            <input variable="taxa"/>
+            <assign variable="valorVF" expression="fv(capital, taxa, tempo)"/>
+            <output expression="&quot;Valor Futuro =&quot; &amp; valorVF" newline="True"/>
+        </body>
+    </function>
+    <function name="fv" type="Real" variable="valor">
+        <parameters>
+            <parameter name="c" type="Real" array="False"/>
+            <parameter name="i" type="Integer" array="False"/>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="valor" type="Real" array="False" size=""/>
+            <assign variable="valor" expression="c * (1*i)*n"/>
+        </body>
+    </function>
+</flowgorithm>

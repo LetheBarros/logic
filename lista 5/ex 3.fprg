@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-05-03 07:17:39 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDUtMDM7IjA3OjEwOjU3ICI7Mjc2MQ=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDUtMDM7IjA3OjE3OjM5ICI7MjsyODc3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite a nota&quot;" newline="True"/>
+            <input variable="nota"/>
+            <while expression="nota &gt; 10">
+                <output expression="&quot;Digite nota entre 0 e 10&quot;" newline="True"/>
+            </while>
+            <if expression="aprovacao(nota)">
+                <then>
+                    <output expression="&quot;aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;reprovado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="aprovacao" type="Boolean" variable="aprovado">
+        <parameters>
+            <parameter name="nota" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="aprovado" type="Boolean" array="False" size=""/>
+            <if expression="nota &gt;= 6">
+                <then>
+                    <assign variable="aprovado" expression="true"/>
+                </then>
+                <else>
+                    <assign variable="aprovado" expression="false"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
