@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-05 07:47:33 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTU7IjEwOjEwOjE1ICI7Mjc1MA=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDU7IjA3OjQ3OjMzICI7MzsyODc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="c, fator" type="Integer" array="False" size=""/>
+            <assign variable="fator" expression="1"/>
+            <for variable="c" start="1" end="5" direction="inc" step="1">
+                <assign variable="fator" expression="fator * c"/>
+            </for>
+            <output expression="fator" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

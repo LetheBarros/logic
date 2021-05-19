@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-05 07:42:09 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTU7IjEwOjAyOjA4ICI7Mjc1Mw=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDU7IjA3OjQyOjA5ICI7MzsyODc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, soma" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <for variable="i" start="1" end="50" direction="inc" step="1">
+                <assign variable="soma" expression="soma + i"/>
+                <output expression="i" newline="True"/>
+            </for>
+            <output expression="&quot;A soma da sequ&#234;ncia &#233; &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

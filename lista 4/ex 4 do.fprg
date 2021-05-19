@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-05 07:43:41 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTU7IjEwOjAyOjA4ICI7Mjc1Mw=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDU7IjA3OjQzOjQxICI7NTsyODcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, soma" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <do expression="i &lt;= 50">
+                <assign variable="soma" expression="soma + i"/>
+                <output expression="i" newline="True"/>
+                <assign variable="i" expression="i + 1"/>
+            </do>
+            <output expression="&quot;A soma da sequ&#234;ncia &#233; &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

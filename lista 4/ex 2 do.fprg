@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-05 07:31:33 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTU7IjA5OjUzOjI3ICI7Mjc2OA=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDU7IjA3OjMxOjMzICI7OTsyODc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <if expression="i % 2 == 0">
+                <then>
+                    <assign variable="i" expression="i + 1"/>
+                </then>
+                <else/>
+            </if>
+            <do expression="i &lt;= 99">
+                <output expression="i" newline="True"/>
+                <assign variable="i" expression="i + 2"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-05 08:00:09 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDQ7IjA0OjM3OjU2ICI7Mjc2Ng=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDU7IjA4OjAwOjA5ICI7MzsyODY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="soma, a" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <for variable="a" start="1" end="100" direction="inc" step="1">
+                <if expression="a % 2 == 0">
+                    <then>
+                        <assign variable="soma" expression="soma + a"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;O resultado &#233;: &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

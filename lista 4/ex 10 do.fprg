@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-05 08:52:01 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDQ7IjA1OjAzOjA1ICI7Mjc1NA=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDU7IjA4OjUyOjAxICI7MzsyODY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="soma, mult, i" type="Real" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <assign variable="mult" expression="3"/>
+            <assign variable="i" expression="1"/>
+            <do expression="i &lt;= 20">
+                <output expression="mult" newline="True"/>
+                <assign variable="soma" expression="soma + mult"/>
+                <assign variable="mult" expression="mult * 3"/>
+                <assign variable="i" expression="i + 1"/>
+            </do>
+            <output expression="&quot;A soma dos m&#250;ltiplos &#233;: &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
