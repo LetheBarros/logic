@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-28 06:23:28 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDItMjg7IjA2OjE2OjE1ICI7Mjc2NA=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDItMjg7IjA2OjIzOjI4ICI7MjsyODc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="5. Escreva um algoritmo para calcular e exibir a &#225;rea e o comprimento de uma circunfer&#234;ncia, considerando as f&#243;rmulas matem&#225;ticas, abaixo.&#13;&#10;&#13;&#10;A = pi*raio^2&#13;&#10;C = 2*pi*raio"/>
+            <declare name="area, comprimento, raio" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o raio da circunfer&#234;ncia&quot;" newline="True"/>
+            <input variable="raio"/>
+            <assign variable="area" expression="pi * raio^2"/>
+            <output expression="&quot;A &#225;rea da circunfer&#234;ncia &#233; &quot; &amp; area" newline="True"/>
+            <assign variable="comprimento" expression="2*pi*raio"/>
+            <output expression="&quot;O comprimento da circunfer&#234;ncia &#233; &quot; &amp; comprimento" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

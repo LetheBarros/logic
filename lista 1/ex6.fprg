@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-28 06:30:04 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDItMjg7IjA2OjIzOjM5ICI7Mjc2OA=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDItMjg7IjA2OjMwOjA0ICI7MTsyODY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="6. Escreva um algoritmo para calcular e exibir o valor do &#226;ngulo em Radianos ao digitarmos o valor do &#226;ngulo em Graus. Considere a f&#243;rmula, abaixo.&#13;&#10;radianos = pi*graus/180"/>
+            <declare name="radianos, graus" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o &#226;ngulo em graus&quot;" newline="True"/>
+            <input variable="graus"/>
+            <assign variable="radianos" expression="pi * graus/180"/>
+            <output expression="&quot;O &#226;ngulo &#233; de &quot; &amp; radianos &amp; &quot; radianos&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

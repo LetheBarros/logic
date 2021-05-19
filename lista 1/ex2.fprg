@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-28 05:56:45 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDItMjg7IjA1OjM4OjMyICI7Mjc2Ng=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDItMjg7IjA1OjU2OjQ1ICI7MTsyODc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="2. Construir um algoritmo que calcule a raz&#227;o entre o pre&#231;o do &#225;lcool e o pre&#231;o da gasolina"/>
+            <declare name="razao, precogasolina, precoalcool" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o pre&#231;o do alcool&quot;" newline="True"/>
+            <input variable="precoalcool"/>
+            <output expression="&quot;Digite o pre&#231;o da gasolina&quot;" newline="True"/>
+            <input variable="precogasolina"/>
+            <assign variable="razao" expression="precoalcool / precogasolina"/>
+            <output expression="&quot;Raz&#227;o = &quot; &amp; razao" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

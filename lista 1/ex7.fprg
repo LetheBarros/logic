@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-28 06:36:40 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDItMjg7IjA2OjMwOjA4ICI7Mjc2Mg=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDItMjg7IjA2OjM2OjQwICI7MTsyODcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="7. Escreva um algoritmo para calcular e exibir uma temperatura em graus Fahrenheit a partir de uma entrada de temperatura em graus Celsius. Considera a f&#243;rmula de convers&#227;o, abaixo.&#13;&#10;&#13;&#10;F = 9/5* C +32"/>
+            <declare name="F, C" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite a temperatura em graus Celsius&quot;" newline="True"/>
+            <input variable="C"/>
+            <assign variable="F" expression="9/5* C +32"/>
+            <output expression="F &amp; &quot; graus Fahrenheit&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

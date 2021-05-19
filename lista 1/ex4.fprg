@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-28 06:10:36 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDItMjg7IjA2OjA1OjE3ICI7Mjc2NA=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDItMjg7IjA2OjEwOjM2ICI7MTsyODY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="4. Escreva um algoritmo para calcular e exibir o volume de uma esfera, considerando a f&#243;rmula, abaixo. V = (4/3) * PI*R^3"/>
+            <declare name="volume, raio" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o valor do raio&quot;" newline="True"/>
+            <input variable="raio"/>
+            <assign variable="volume" expression="(4/3) * pi * raio^3"/>
+            <output expression="&quot;O volume da esfera &#233; &quot; &amp; volume" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
