@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-05 08:41:43 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDU7IjA4OjM0OjQwICI7Mjc2MQ=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDU7IjA4OjQxOjQzICI7MTsyODcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d, x" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="3"/>
+            <assign variable="b" expression="5"/>
+            <assign variable="c" expression="2"/>
+            <assign variable="d" expression="9"/>
+            <if expression="d&gt; 5 &amp;&amp; c &gt;1 || b = 4">
+                <then>
+                    <assign variable="x" expression="c*d+9/a+1"/>
+                </then>
+                <else>
+                    <assign variable="x" expression="c*d/a+3"/>
+                </else>
+            </if>
+            <output expression="&quot;X &#233; igual a &quot; &amp; x" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
