@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-05 07:09:24 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDQ7IjA0OjUwOjMxICI7Mjc1NA=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDU7IjA3OjA5OjI0ICI7NDsyODc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, i, result" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="result" expression="1"/>
+            <output expression="&quot;Digite a base&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Digite o expoente&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="b &lt;= 0">
+                <then/>
+                <else>
+                    <while expression="i &lt;= b">
+                        <assign variable="result" expression="result * a"/>
+                        <assign variable="i" expression="i + 1"/>
+                    </while>
+                </else>
+            </if>
+            <output expression="a &amp; &quot; elevado a &quot; &amp; b &amp; &quot; &#233; igual a &quot; &amp; result" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

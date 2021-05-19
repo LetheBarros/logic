@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-05 06:34:13 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDQ7IjA0OjM3OjU2ICI7Mjc2Ng=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDU7IjA2OjM0OjEzICI7MjsyODY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="soma, a" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="soma" expression="0"/>
+            <while expression="a &lt;= 100">
+                <assign variable="a" expression="a + 1"/>
+                <if expression="a % 2 == 0">
+                    <then>
+                        <assign variable="soma" expression="soma + a"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="&quot;O resultado &#233;: &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

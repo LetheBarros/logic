@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-05 06:47:29 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDMtMTU7IjA5OjU5OjM4ICI7Mjc3Ng=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDU7IjA2OjQ3OjI5ICI7MjsyODc5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="c, n" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="1"/>
+            <output expression="&quot;At&#233; que n&#250;mero iremos contar?&quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="c &lt;= n">
+                <output expression="c" newline="True"/>
+                <assign variable="c" expression="c + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

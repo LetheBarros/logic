@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-04 05:38:14 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDQ7IjA1OjI1OjQ4ICI7Mjc2NQ=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDQ7IjA1OjM4OjE0ICI7MzsyODcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s, piX, cont, raiz, i" type="Real" array="False" size=""/>
+            <assign variable="s" expression="0"/>
+            <assign variable="cont" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <while expression="cont &lt;= 71">
+                <assign variable="s" expression="s + 1 / (i^3)"/>
+                <assign variable="i" expression="i + 2"/>
+                <assign variable="cont" expression="cont + 1"/>
+            </while>
+            <assign variable="raiz" expression="s * 32"/>
+            <assign variable="piX" expression="raiz ^ (1/3)"/>
+            <output expression="&quot;O valor de pi &#233; &quot; &amp; piX" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

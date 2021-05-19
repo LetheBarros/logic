@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-05 06:33:32 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDU7IjA2OjI5OjQzICI7Mjc2Ng=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDU7IjA2OjMzOjMyICI7MTsyODY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <output expression="&quot;Digite a tabuada desejada&quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="n &lt;= 0">
+                <output expression="&quot;Digite um n&#250;mero maior que 0&quot;" newline="True"/>
+                <input variable="n"/>
+            </while>
+            <while expression="i &lt;= 10">
+                <output expression="n &amp; &quot; x &quot; &amp; i &amp; &quot;=&quot; &amp; n*i" newline="True"/>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-04 05:15:20 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDQ7IjA1OjA3OjUyICI7Mjc2MA=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDQ7IjA1OjE1OjIwICI7MTsyODYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a1, a2, i, final, atual" type="Integer" array="False" size=""/>
+            <output expression="&quot;Quantos &#237;ndices teremos?&quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="i" expression="2"/>
+            <assign variable="a1" expression="1"/>
+            <assign variable="a2" expression="1"/>
+            <assign variable="atual" expression="1"/>
+            <while expression="final &lt;= 0">
+                <output expression="&quot;Digite um n&#250;mero maior que 0&quot;" newline="True"/>
+                <input variable="final"/>
+            </while>
+            <output expression="a1" newline="True"/>
+            <output expression="a2" newline="True"/>
+            <while expression="i &lt; final">
+                <assign variable="a1" expression="a2"/>
+                <assign variable="a2" expression="atual"/>
+                <assign variable="atual" expression="a1 + a2"/>
+                <assign variable="i" expression="i + 1"/>
+                <output expression="atual" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

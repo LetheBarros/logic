@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-04 05:03:02 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDQ7IjA0OjU2OjQyICI7Mjc2Mg=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDQ7IjA1OjAzOjAyICI7MTsyODU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="somay, x, termos, somaT, i" type="Integer" array="False" size=""/>
+            <assign variable="somay" expression="0"/>
+            <assign variable="termos" expression="1"/>
+            <assign variable="somaT" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <output expression="&quot;Digite o n&#250;mero desejado&quot;" newline="True"/>
+            <input variable="x"/>
+            <while expression="x &lt; 0">
+                <output expression="&quot;Digite um n&#250;meor maior que 0&quot;" newline="True"/>
+                <input variable="x"/>
+            </while>
+            <while expression="termos &lt;= 100">
+                <assign variable="somaT" expression="x + i"/>
+                <assign variable="i" expression="i + 1"/>
+                <assign variable="somay" expression="somay + somaT"/>
+                <assign variable="termos" expression="termos + 1"/>
+            </while>
+            <output expression="&quot;A soma final &#233; &quot; &amp; somay" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

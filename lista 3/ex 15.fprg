@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="letic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-05 06:44:23 "/>
+        <attribute name="created" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDU7IjA2OjM5OjIzICI7Mjc2NQ=="/>
+        <attribute name="edited" value="bGV0aWM7REVTS1RPUC1UMlBINUU1OzIwMjEtMDQtMDU7IjA2OjQ0OjIzICI7MTsyODY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, primo, calc" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="primo" expression="0"/>
+            <assign variable="calc" expression="0"/>
+            <output expression="&quot;Digite o n&#250;mero que deseja verificar&quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="i &lt;= n">
+                <if expression="n % i == 0">
+                    <then>
+                        <assign variable="primo" expression="primo + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+            <if expression="primo &lt; 3">
+                <then>
+                    <output expression="&quot;O n&#250;mero &quot; &amp; n &amp; &quot; &#233; primo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O n&#250;mero &quot; &amp; n &amp; &quot; n&#227;o &#233; primo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
